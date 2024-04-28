@@ -12,6 +12,7 @@
 		FA196EEF2BDE801700E0A97E /* GitHubAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196EEE2BDE801700E0A97E /* GitHubAppUITests.swift */; };
 		FA196EF12BDE801700E0A97E /* GitHubAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196EF02BDE801700E0A97E /* GitHubAppUITestsLaunchTests.swift */; };
 		FA196EFF2BDE812A00E0A97E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA196EFE2BDE812A00E0A97E /* Assets.xcassets */; };
+		FA196F042BDE81BD00E0A97E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F022BDE81BD00E0A97E /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FA196EEE2BDE801700E0A97E /* GitHubAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAppUITests.swift; sourceTree = "<group>"; };
 		FA196EF02BDE801700E0A97E /* GitHubAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA196EFE2BDE812A00E0A97E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA196F022BDE81BD00E0A97E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FA196F032BDE81BD00E0A97E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,9 +127,19 @@
 		FA196F002BDE813200E0A97E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FA196F012BDE81BD00E0A97E /* Config */,
 				FA196ED32BDE801600E0A97E /* GitHubApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		FA196F012BDE81BD00E0A97E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F032BDE81BD00E0A97E /* Info.plist */,
+				FA196F022BDE81BD00E0A97E /* Config.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA196ED42BDE801600E0A97E /* GitHubApp.swift in Sources */,
+				FA196F042BDE81BD00E0A97E /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +438,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(PRODUCT_NAME)/App/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -455,6 +470,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(PRODUCT_NAME)/App/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
