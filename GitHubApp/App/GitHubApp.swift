@@ -8,7 +8,7 @@ import SwiftUI
 struct GitHubApp: App {
     var body: some Scene {
         WindowGroup {
-            
+            UserDetailsView()
         }
     }
 }
