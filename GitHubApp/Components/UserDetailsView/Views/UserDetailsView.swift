@@ -11,7 +11,9 @@ struct UserDetailsView: View {
     var body: some View {
         LoadingView(isLoading: $viewModel.isLoading) {
             Unwrap(viewModel.user) { user in
-                userDetailsView(for: user)
+                NavigationLink(destination: RepositoriesView(username: user.login)) {
+                    userDetailsView(for: user)
+                }
             }
         }
         .onAppear {

@@ -26,6 +26,11 @@
 		FA196F402BDEAB7300E0A97E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F3C2BDEAB7300E0A97E /* Network.swift */; };
 		FA196F412BDEAB7300E0A97E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F3E2BDEAB7300E0A97E /* Endpoint.swift */; };
 		FA196F422BDEAB7300E0A97E /* Endpoint+UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F3F2BDEAB7300E0A97E /* Endpoint+UserDetails.swift */; };
+		FA196F442BDEABD800E0A97E /* Endpoint+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F432BDEABD800E0A97E /* Endpoint+Repository.swift */; };
+		FA196F462BDEABEF00E0A97E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F452BDEABEF00E0A97E /* Repository.swift */; };
+		FA196F4C2BDEAC0800E0A97E /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F492BDEAC0800E0A97E /* RepositoriesViewModel.swift */; };
+		FA196F4D2BDEAC0800E0A97E /* RepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F4B2BDEAC0800E0A97E /* RepositoriesView.swift */; };
+		FA196F502BDEAC9D00E0A97E /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F4F2BDEAC9D00E0A97E /* Appearance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,11 @@
 		FA196F3C2BDEAB7300E0A97E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		FA196F3E2BDEAB7300E0A97E /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		FA196F3F2BDEAB7300E0A97E /* Endpoint+UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Endpoint+UserDetails.swift"; sourceTree = "<group>"; };
+		FA196F432BDEABD800E0A97E /* Endpoint+Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Endpoint+Repository.swift"; sourceTree = "<group>"; };
+		FA196F452BDEABEF00E0A97E /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FA196F492BDEAC0800E0A97E /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		FA196F4B2BDEAC0800E0A97E /* RepositoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesView.swift; sourceTree = "<group>"; };
+		FA196F4F2BDEAC9D00E0A97E /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +132,9 @@
 			children = (
 				FA196F002BDE813200E0A97E /* App */,
 				FA196F062BDE824D00E0A97E /* Components */,
+				FA196F1F2BDE831E00E0A97E /* Views */,
 				FA196F272BDE836400E0A97E /* Models */,
 				FA196F3B2BDEAB7300E0A97E /* Services */,
-				FA196F1F2BDE831E00E0A97E /* Views */,
 				FA196F0E2BDE82D400E0A97E /* Utilities */,
 				FA196EFD2BDE812A00E0A97E /* Resources */,
 			);
@@ -179,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				FA196F072BDE825E00E0A97E /* UserDetailsView */,
+				FA196F472BDEAC0800E0A97E /* RepositoriesView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -213,6 +224,7 @@
 			children = (
 				FA196F172BDE82D400E0A97E /* Helpers */,
 				FA196F302BDE83A500E0A97E /* Extensions */,
+				FA196F4E2BDEAC9D00E0A97E /* Styles */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -248,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				FA196F292BDE836400E0A97E /* User.swift */,
+				FA196F452BDEABEF00E0A97E /* Repository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,8 +287,42 @@
 			children = (
 				FA196F3E2BDEAB7300E0A97E /* Endpoint.swift */,
 				FA196F3F2BDEAB7300E0A97E /* Endpoint+UserDetails.swift */,
+				FA196F432BDEABD800E0A97E /* Endpoint+Repository.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		FA196F472BDEAC0800E0A97E /* RepositoriesView */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F4A2BDEAC0800E0A97E /* Views */,
+				FA196F482BDEAC0800E0A97E /* ViewModels */,
+			);
+			path = RepositoriesView;
+			sourceTree = "<group>";
+		};
+		FA196F482BDEAC0800E0A97E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F492BDEAC0800E0A97E /* RepositoriesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA196F4A2BDEAC0800E0A97E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F4B2BDEAC0800E0A97E /* RepositoriesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA196F4E2BDEAC9D00E0A97E /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F4F2BDEAC9D00E0A97E /* Appearance.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,16 +456,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA196F382BDE83CE00E0A97E /* ImageView.swift in Sources */,
+				FA196F442BDEABD800E0A97E /* Endpoint+Repository.swift in Sources */,
 				FA196F1E2BDE82D400E0A97E /* Unwrap.swift in Sources */,
 				FA196F402BDEAB7300E0A97E /* Network.swift in Sources */,
+				FA196F4C2BDEAC0800E0A97E /* RepositoriesViewModel.swift in Sources */,
 				FA196F412BDEAB7300E0A97E /* Endpoint.swift in Sources */,
+				FA196F4D2BDEAC0800E0A97E /* RepositoriesView.swift in Sources */,
 				FA196F0D2BDE827800E0A97E /* UserDetailsView.swift in Sources */,
 				FA196ED42BDE801600E0A97E /* GitHubApp.swift in Sources */,
 				FA196F2F2BDE838800E0A97E /* ProgressIndicatorView.swift in Sources */,
 				FA196F3A2BDE83ED00E0A97E /* ImageLoader.swift in Sources */,
 				FA196F2C2BDE836400E0A97E /* User.swift in Sources */,
 				FA196F042BDE81BD00E0A97E /* Config.swift in Sources */,
+				FA196F462BDEABEF00E0A97E /* Repository.swift in Sources */,
 				FA196F0C2BDE827800E0A97E /* UserDetailsViewModel.swift in Sources */,
+				FA196F502BDEAC9D00E0A97E /* Appearance.swift in Sources */,
 				FA196F352BDE83A500E0A97E /* String+Ext.swift in Sources */,
 				FA196F422BDEAB7300E0A97E /* Endpoint+UserDetails.swift in Sources */,
 				FA196F212BDE831E00E0A97E /* LoadingView.swift in Sources */,
