@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA196ED42BDE801600E0A97E /* GitHubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196ED32BDE801600E0A97E /* GitHubAppApp.swift */; };
-		FA196ED82BDE801700E0A97E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA196ED72BDE801700E0A97E /* Assets.xcassets */; };
-		FA196EDB2BDE801700E0A97E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA196EDA2BDE801700E0A97E /* Preview Assets.xcassets */; };
+		FA196ED42BDE801600E0A97E /* GitHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196ED32BDE801600E0A97E /* GitHubApp.swift */; };
 		FA196EE52BDE801700E0A97E /* GitHubAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196EE42BDE801700E0A97E /* GitHubAppTests.swift */; };
 		FA196EEF2BDE801700E0A97E /* GitHubAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196EEE2BDE801700E0A97E /* GitHubAppUITests.swift */; };
 		FA196EF12BDE801700E0A97E /* GitHubAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196EF02BDE801700E0A97E /* GitHubAppUITestsLaunchTests.swift */; };
+		FA196EFF2BDE812A00E0A97E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA196EFE2BDE812A00E0A97E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +33,13 @@
 
 /* Begin PBXFileReference section */
 		FA196ED02BDE801600E0A97E /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA196ED32BDE801600E0A97E /* GitHubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAppApp.swift; sourceTree = "<group>"; };
-		FA196ED72BDE801700E0A97E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA196EDA2BDE801700E0A97E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA196ED32BDE801600E0A97E /* GitHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubApp.swift; sourceTree = "<group>"; };
 		FA196EE02BDE801700E0A97E /* GitHubAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA196EE42BDE801700E0A97E /* GitHubAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAppTests.swift; sourceTree = "<group>"; };
 		FA196EEA2BDE801700E0A97E /* GitHubAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA196EEE2BDE801700E0A97E /* GitHubAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAppUITests.swift; sourceTree = "<group>"; };
 		FA196EF02BDE801700E0A97E /* GitHubAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA196EFE2BDE812A00E0A97E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,19 +90,10 @@
 		FA196ED22BDE801600E0A97E /* GitHubApp */ = {
 			isa = PBXGroup;
 			children = (
-				FA196ED32BDE801600E0A97E /* GitHubAppApp.swift */,
-				FA196ED72BDE801700E0A97E /* Assets.xcassets */,
-				FA196ED92BDE801700E0A97E /* Preview Content */,
+				FA196F002BDE813200E0A97E /* App */,
+				FA196EFD2BDE812A00E0A97E /* Resources */,
 			);
 			path = GitHubApp;
-			sourceTree = "<group>";
-		};
-		FA196ED92BDE801700E0A97E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FA196EDA2BDE801700E0A97E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		FA196EE32BDE801700E0A97E /* GitHubAppTests */ = {
@@ -122,6 +111,22 @@
 				FA196EF02BDE801700E0A97E /* GitHubAppUITestsLaunchTests.swift */,
 			);
 			path = GitHubAppUITests;
+			sourceTree = "<group>";
+		};
+		FA196EFD2BDE812A00E0A97E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA196EFE2BDE812A00E0A97E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA196F002BDE813200E0A97E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA196ED32BDE801600E0A97E /* GitHubApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA196EDB2BDE801700E0A97E /* Preview Assets.xcassets in Resources */,
-				FA196ED82BDE801700E0A97E /* Assets.xcassets in Resources */,
+				FA196EFF2BDE812A00E0A97E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA196ED42BDE801600E0A97E /* GitHubAppApp.swift in Sources */,
+				FA196ED42BDE801600E0A97E /* GitHubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +421,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GitHubApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -448,7 +452,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GitHubApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

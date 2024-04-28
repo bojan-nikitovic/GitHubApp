@@ -5,7 +5,7 @@
 import SwiftUI
 
 @main
-struct GitHubAppApp: App {
+struct GitHubApp: App {
     var body: some Scene {
         WindowGroup {
             
