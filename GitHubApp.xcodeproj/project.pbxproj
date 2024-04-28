@@ -31,6 +31,11 @@
 		FA196F4C2BDEAC0800E0A97E /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F492BDEAC0800E0A97E /* RepositoriesViewModel.swift */; };
 		FA196F4D2BDEAC0800E0A97E /* RepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F4B2BDEAC0800E0A97E /* RepositoriesView.swift */; };
 		FA196F502BDEAC9D00E0A97E /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F4F2BDEAC9D00E0A97E /* Appearance.swift */; };
+		FA196F522BDEE58F00E0A97E /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F512BDEE58F00E0A97E /* Commit.swift */; };
+		FA196F582BDEE59900E0A97E /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F552BDEE59900E0A97E /* CommitsViewModel.swift */; };
+		FA196F592BDEE59900E0A97E /* CommitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F572BDEE59900E0A97E /* CommitsView.swift */; };
+		FA196F5B2BDEE5AB00E0A97E /* Endpoint+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F5A2BDEE5AB00E0A97E /* Endpoint+Commit.swift */; };
+		FA196F5F2BDEE5D600E0A97E /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F5D2BDEE5D600E0A97E /* Date+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,11 @@
 		FA196F492BDEAC0800E0A97E /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
 		FA196F4B2BDEAC0800E0A97E /* RepositoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesView.swift; sourceTree = "<group>"; };
 		FA196F4F2BDEAC9D00E0A97E /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		FA196F512BDEE58F00E0A97E /* Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		FA196F552BDEE59900E0A97E /* CommitsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
+		FA196F572BDEE59900E0A97E /* CommitsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitsView.swift; sourceTree = "<group>"; };
+		FA196F5A2BDEE5AB00E0A97E /* Endpoint+Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Endpoint+Commit.swift"; sourceTree = "<group>"; };
+		FA196F5D2BDEE5D600E0A97E /* Date+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +200,7 @@
 			children = (
 				FA196F072BDE825E00E0A97E /* UserDetailsView */,
 				FA196F472BDEAC0800E0A97E /* RepositoriesView */,
+				FA196F532BDEE59900E0A97E /* CommitsView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -261,6 +272,7 @@
 			children = (
 				FA196F292BDE836400E0A97E /* User.swift */,
 				FA196F452BDEABEF00E0A97E /* Repository.swift */,
+				FA196F512BDEE58F00E0A97E /* Commit.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				FA196F322BDE83A500E0A97E /* String+Ext.swift */,
+				FA196F5D2BDEE5D600E0A97E /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,6 +301,7 @@
 				FA196F3E2BDEAB7300E0A97E /* Endpoint.swift */,
 				FA196F3F2BDEAB7300E0A97E /* Endpoint+UserDetails.swift */,
 				FA196F432BDEABD800E0A97E /* Endpoint+Repository.swift */,
+				FA196F5A2BDEE5AB00E0A97E /* Endpoint+Commit.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -323,6 +337,31 @@
 				FA196F4F2BDEAC9D00E0A97E /* Appearance.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		FA196F532BDEE59900E0A97E /* CommitsView */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F562BDEE59900E0A97E /* Views */,
+				FA196F542BDEE59900E0A97E /* ViewModels */,
+			);
+			path = CommitsView;
+			sourceTree = "<group>";
+		};
+		FA196F542BDEE59900E0A97E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F552BDEE59900E0A97E /* CommitsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA196F562BDEE59900E0A97E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F572BDEE59900E0A97E /* CommitsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,18 +494,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA196F522BDEE58F00E0A97E /* Commit.swift in Sources */,
+				FA196F592BDEE59900E0A97E /* CommitsView.swift in Sources */,
 				FA196F382BDE83CE00E0A97E /* ImageView.swift in Sources */,
 				FA196F442BDEABD800E0A97E /* Endpoint+Repository.swift in Sources */,
 				FA196F1E2BDE82D400E0A97E /* Unwrap.swift in Sources */,
 				FA196F402BDEAB7300E0A97E /* Network.swift in Sources */,
 				FA196F4C2BDEAC0800E0A97E /* RepositoriesViewModel.swift in Sources */,
 				FA196F412BDEAB7300E0A97E /* Endpoint.swift in Sources */,
+				FA196F5F2BDEE5D600E0A97E /* Date+Ext.swift in Sources */,
 				FA196F4D2BDEAC0800E0A97E /* RepositoriesView.swift in Sources */,
 				FA196F0D2BDE827800E0A97E /* UserDetailsView.swift in Sources */,
+				FA196F5B2BDEE5AB00E0A97E /* Endpoint+Commit.swift in Sources */,
 				FA196ED42BDE801600E0A97E /* GitHubApp.swift in Sources */,
 				FA196F2F2BDE838800E0A97E /* ProgressIndicatorView.swift in Sources */,
 				FA196F3A2BDE83ED00E0A97E /* ImageLoader.swift in Sources */,
 				FA196F2C2BDE836400E0A97E /* User.swift in Sources */,
+				FA196F582BDEE59900E0A97E /* CommitsViewModel.swift in Sources */,
 				FA196F042BDE81BD00E0A97E /* Config.swift in Sources */,
 				FA196F462BDEABEF00E0A97E /* Repository.swift in Sources */,
 				FA196F0C2BDE827800E0A97E /* UserDetailsViewModel.swift in Sources */,

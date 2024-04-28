@@ -13,7 +13,9 @@ struct RepositoriesView: View {
     var body: some View {
         LoadingView(isLoading: $viewModel.isLoading) {
             List(viewModel.repositories) { repository in
-                repositoryView(for: repository)
+                NavigationLink(destination: CommitsView(user: username, repository: repository.name)) {
+                    repositoryView(for: repository)
+                }
             }
             .listStyle(PlainListStyle())
         }

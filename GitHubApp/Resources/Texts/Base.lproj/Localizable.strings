@@ -1,3 +1,4 @@
 "general.ok" = "OK";
 "user_details.title" = "User Details";
 "repositories.title" = "Repositories";
+"commits.title" = "Commits";
