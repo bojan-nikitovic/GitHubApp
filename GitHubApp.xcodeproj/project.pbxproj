@@ -23,6 +23,9 @@
 		FA196F352BDE83A500E0A97E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F322BDE83A500E0A97E /* String+Ext.swift */; };
 		FA196F382BDE83CE00E0A97E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F372BDE83CE00E0A97E /* ImageView.swift */; };
 		FA196F3A2BDE83ED00E0A97E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F392BDE83ED00E0A97E /* ImageLoader.swift */; };
+		FA196F402BDEAB7300E0A97E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F3C2BDEAB7300E0A97E /* Network.swift */; };
+		FA196F412BDEAB7300E0A97E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F3E2BDEAB7300E0A97E /* Endpoint.swift */; };
+		FA196F422BDEAB7300E0A97E /* Endpoint+UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F3F2BDEAB7300E0A97E /* Endpoint+UserDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		FA196F322BDE83A500E0A97E /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		FA196F372BDE83CE00E0A97E /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		FA196F392BDE83ED00E0A97E /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FA196F3C2BDEAB7300E0A97E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FA196F3E2BDEAB7300E0A97E /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		FA196F3F2BDEAB7300E0A97E /* Endpoint+UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Endpoint+UserDetails.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 				FA196F002BDE813200E0A97E /* App */,
 				FA196F062BDE824D00E0A97E /* Components */,
 				FA196F272BDE836400E0A97E /* Models */,
+				FA196F3B2BDEAB7300E0A97E /* Services */,
 				FA196F1F2BDE831E00E0A97E /* Views */,
 				FA196F0E2BDE82D400E0A97E /* Utilities */,
 				FA196EFD2BDE812A00E0A97E /* Resources */,
@@ -253,6 +260,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FA196F3B2BDEAB7300E0A97E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F3D2BDEAB7300E0A97E /* API */,
+				FA196F3C2BDEAB7300E0A97E /* Network.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA196F3D2BDEAB7300E0A97E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F3E2BDEAB7300E0A97E /* Endpoint.swift */,
+				FA196F3F2BDEAB7300E0A97E /* Endpoint+UserDetails.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,6 +410,8 @@
 			files = (
 				FA196F382BDE83CE00E0A97E /* ImageView.swift in Sources */,
 				FA196F1E2BDE82D400E0A97E /* Unwrap.swift in Sources */,
+				FA196F402BDEAB7300E0A97E /* Network.swift in Sources */,
+				FA196F412BDEAB7300E0A97E /* Endpoint.swift in Sources */,
 				FA196F0D2BDE827800E0A97E /* UserDetailsView.swift in Sources */,
 				FA196ED42BDE801600E0A97E /* GitHubApp.swift in Sources */,
 				FA196F2F2BDE838800E0A97E /* ProgressIndicatorView.swift in Sources */,
@@ -393,6 +420,7 @@
 				FA196F042BDE81BD00E0A97E /* Config.swift in Sources */,
 				FA196F0C2BDE827800E0A97E /* UserDetailsViewModel.swift in Sources */,
 				FA196F352BDE83A500E0A97E /* String+Ext.swift in Sources */,
+				FA196F422BDEAB7300E0A97E /* Endpoint+UserDetails.swift in Sources */,
 				FA196F212BDE831E00E0A97E /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

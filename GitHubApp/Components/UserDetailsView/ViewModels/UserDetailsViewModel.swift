@@ -11,6 +11,21 @@ class UserDetailsViewModel: ObservableObject {
     @Published var error: Error?
     
     func getUserDetails(for user: String) {
-        self.user = User(id: 0, login: "bojan-nikitovic", company: "Company Name")
+        isLoading = true
+        
+        Service<User>().makeRequest(endpoint: Endpoint.getUserDetails(for: user)).request { [weak self] result in
+            guard let self = self else { return }
+            
+            self.isLoading = false
+            
+            switch result {
+            case .success(let user):
+                self.user = user
+                
+                self.error = nil
+            case .failure(let error):
+                self.error = error
+            }
+        }
     }
 }
