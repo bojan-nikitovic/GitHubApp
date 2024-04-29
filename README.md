@@ -19,6 +19,6 @@ GitHubApp is a simple iOS application built with SwiftUI that utilizes the GitHu
 Clone the repository and open the project in Xcode:
 
 ```bash
-git clone https://github.com/yourusername/GitHubApp.git
+git clone https://github.com/bojan-nikitovic/GitHubApp.git
 cd GitHubApp
 open GitHubApp.xcodeproj
