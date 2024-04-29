@@ -22,6 +22,7 @@ struct RepositoriesView: View {
         .onAppear {
             viewModel.getRepositories(for: username)
         }
+        .errorAlert(error: $viewModel.error)
         .navigationTitle("repositories.title".localized)
     }
     

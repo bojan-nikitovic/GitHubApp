@@ -19,6 +19,7 @@ struct UserDetailsView: View {
         .onAppear {
             viewModel.getUserDetails(for: USERNAME)
         }
+        .errorAlert(error: $viewModel.error)
         .navigationTitle("user_details.title".localized)
     }
     

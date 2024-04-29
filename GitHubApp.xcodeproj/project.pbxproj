@@ -36,6 +36,8 @@
 		FA196F592BDEE59900E0A97E /* CommitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F572BDEE59900E0A97E /* CommitsView.swift */; };
 		FA196F5B2BDEE5AB00E0A97E /* Endpoint+Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F5A2BDEE5AB00E0A97E /* Endpoint+Commit.swift */; };
 		FA196F5F2BDEE5D600E0A97E /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F5D2BDEE5D600E0A97E /* Date+Ext.swift */; };
+		FA196F612BDEE6C600E0A97E /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F602BDEE6C600E0A97E /* View+Ext.swift */; };
+		FA196F642BDEE6D800E0A97E /* ErrorAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA196F632BDEE6D800E0A97E /* ErrorAlertModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		FA196F572BDEE59900E0A97E /* CommitsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitsView.swift; sourceTree = "<group>"; };
 		FA196F5A2BDEE5AB00E0A97E /* Endpoint+Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Endpoint+Commit.swift"; sourceTree = "<group>"; };
 		FA196F5D2BDEE5D600E0A97E /* Date+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		FA196F602BDEE6C600E0A97E /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		FA196F632BDEE6D800E0A97E /* ErrorAlertModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorAlertModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,7 @@
 			children = (
 				FA196F172BDE82D400E0A97E /* Helpers */,
 				FA196F302BDE83A500E0A97E /* Extensions */,
+				FA196F622BDEE6D800E0A97E /* Modifiers */,
 				FA196F4E2BDEAC9D00E0A97E /* Styles */,
 			);
 			path = Utilities;
@@ -282,6 +287,7 @@
 			children = (
 				FA196F322BDE83A500E0A97E /* String+Ext.swift */,
 				FA196F5D2BDEE5D600E0A97E /* Date+Ext.swift */,
+				FA196F602BDEE6C600E0A97E /* View+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -362,6 +368,14 @@
 				FA196F572BDEE59900E0A97E /* CommitsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FA196F622BDEE6D800E0A97E /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				FA196F632BDEE6D800E0A97E /* ErrorAlertModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,10 +515,12 @@
 				FA196F1E2BDE82D400E0A97E /* Unwrap.swift in Sources */,
 				FA196F402BDEAB7300E0A97E /* Network.swift in Sources */,
 				FA196F4C2BDEAC0800E0A97E /* RepositoriesViewModel.swift in Sources */,
+				FA196F612BDEE6C600E0A97E /* View+Ext.swift in Sources */,
 				FA196F412BDEAB7300E0A97E /* Endpoint.swift in Sources */,
 				FA196F5F2BDEE5D600E0A97E /* Date+Ext.swift in Sources */,
 				FA196F4D2BDEAC0800E0A97E /* RepositoriesView.swift in Sources */,
 				FA196F0D2BDE827800E0A97E /* UserDetailsView.swift in Sources */,
+				FA196F642BDEE6D800E0A97E /* ErrorAlertModifier.swift in Sources */,
 				FA196F5B2BDEE5AB00E0A97E /* Endpoint+Commit.swift in Sources */,
 				FA196ED42BDE801600E0A97E /* GitHubApp.swift in Sources */,
 				FA196F2F2BDE838800E0A97E /* ProgressIndicatorView.swift in Sources */,

@@ -21,6 +21,7 @@ struct CommitsView: View {
         .onAppear {
             viewModel.getCommits(for: user, repository: repository)
         }
+        .errorAlert(error: $viewModel.error)
         .navigationTitle("commits.title".localized)
     }
     
